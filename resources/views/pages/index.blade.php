@@ -73,7 +73,11 @@
   <div class="resume-section">
     <a href="pdf/MichaelGalante2020.pdf" class="btn btn-outline-success btn-lg" target="_blank">View Resume</a>
   </div>
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> ccab2b543cfd046a408de427eb5933eb4faf74f4
 </section>
 
 @include('inc.messages')
