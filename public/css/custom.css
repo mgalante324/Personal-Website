@@ -103,12 +103,6 @@ html, body {
   height: 100vh;
 }
 
-.hi {
-  font-size: 15em;
-  text-align: right;
-  color: #374B42;
-}
-
 .box-left {
   width: 50%;
   height: 100%;
@@ -116,17 +110,23 @@ html, body {
 }
 
 .text-wrapper-left {
+  opacity: 0;
   width: 75%;
   color: #fff;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   text-align: right;
   margin-top: 40%;
+  transition: transform 1.5s ease-in, opacity 1.5s ease-in;
+}
+
+.left-scrolled {
   transform: translateY(-60px);
-  transition: transform 1.5s ease-in-out;
+  opacity: 1;
 }
 
 .text-wrapper-right {
+    opacity: 0;
   width: 75%;
   color: #000;
   font-family: 'Ubuntu', sans-serif;
@@ -135,12 +135,16 @@ html, body {
   text-align: left;
   margin-top: 50%;
   margin-left: 10%;
+  transition: transform 1.5s ease-in-out, opacity 1.5s ease-in;
+}
+
+.right-scrolled {
   transform : translateY(60px);
-  transition: transform 1.5s ease-in-out;
+  opacity: 1;
 }
 
 .text-wrapper-left > h1 {
-  font-size: 7rem;
+  font-size: 5rem;
 }
 
 .box-right {

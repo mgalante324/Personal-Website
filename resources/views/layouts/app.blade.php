@@ -49,10 +49,20 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <!-- Change navbar on scroll -->
     <script>
+      // Change navbar on scroll
       $(window).scroll(function() {
         $('nav').toggleClass('navbar-scrolled', $(this).scrollTop() > 10);
+      });
+
+      // Animate left intro text when intro section is in view
+      $(window).scroll(function() {
+        $('.text-wrapper-left').toggleClass('left-scrolled', $(this).scrollTop() > 400);
+      });
+
+      // Animate right intro text when intro section is in view
+      $(window).scroll(function() {
+        $('.text-wrapper-right').toggleClass('right-scrolled', $(this).scrollTop() > 400);
       });
     </script>
 
